@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+:root {
+  --main-color: #162447;
+  --content-color: #1f4068;
+  --dark-color: #1b1b2f;
+  --write-color: #fefefe;
+  --alt-color: #e43f5a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(
+    to left bottom,
+    #162447,
+    #211a33,
+    #1f1220,
+    #160911,
+    #000000
+  );
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #eeeeee;
+}
+
+header {
+  background-color: var(--dark-color);
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+header nav a {
+  text-decoration: none;
+  color: var(--alt-color);
+  font-size: 1.5rem;
+}
+
+main {
+  margin-top: 2rem;
+  width: 1280px;
+}
+main article {
+  width: 100%;
+}
+main article section form#form-search aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main article section form#form-search aside input {
+  padding: 12px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin: 0 3px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+}
+main article section form#form-search aside input#txt-keyword {
+  width: 50%;
+  color: var(--content-color);
+}
+main article section form#form-search aside input.btn {
+  background-color: var(--content-color);
+  color: var(--write-color);
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+main article section form#form-search aside input.btn:focus {
+  transform: scale(0.9);
+}
+main article section form#form-search aside input.btn:hover {
+  opacity: 0.8;
+}
+main article section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main article section ul li {
+  display: flex;
+  margin: 20px 0;
+  width: 75%;
+  padding: 10px;
+}
+main article section ul li img {
+  border-radius: 10px;
+  transition: all ease-in-out 0.4s;
+  opacity: 0.9;
+}
+main article section ul li img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+main article section ul li div {
+  padding: 20px;
+}
+main article section ul li div span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  color: var(--alt-color);
+}
+main article section ul li div span p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-left: 5px;
+}
+main article section ul li div p {
+  font-size: 1.25rem;
+}
+main article section ul li div h5 {
+  font-size: 2rem;
+}
+main article section ul li div h5 a {
+  text-decoration: none;
+  color: var(--write-color);
+}
+main article section ul li div h5 span {
+  display: inline;
+  font-size: 1.25rem;
+  margin-left: 10px;
+  background-color: var(--alt-color);
+  padding: 7px;
+  border-radius: 5px;
+  color: var(--write-color);
+}
+main article section ul li div h5 span {
+  font-size: 1.25rem;
+  margin-left: 10px;
+  background-color: var(--alt-color);
+  padding: 7px;
+  border-radius: 5px;
+}
+
+main article section#movie-details-container {
+  width: 100%;
+  display: none;
+  margin-top: 20px;
+}
+main article section#movie-details-container.d-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dark-color);
+}
+main article section#movie-details-container.d-block div.card-header {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--main-color);
+}
+main article section#movie-details-container.d-block div.card-header button {
+  padding: 15px;
+  color: var(--write-color);
+  border: none;
+  border-radius: 5px;
+  background-color: var(--alt-color);
+  cursor: pointer;
+  opacity: 0.9;
+  transition: all ease-in-out 0.4s;
+}
+main
+  article
+  section#movie-details-container.d-block
+  div.card-header
+  button:hover {
+  opacity: 1;
+}
+main article section aside#movie-details {
+  display: flex;
+  width: 75%;
+  padding: 10px;
+  position: relative;
+}
+main article section aside#movie-details div.row img {
+  border-radius: 10px;
+}
+main article section aside#movie-details div.col-md-8 {
+  padding: 20px;
+}
+main article section aside#movie-details div.col-md-8 div h5 {
+  font-size: 2rem;
+}
+main article section aside#movie-details div.col-md-8 div h5 span {
+  display: inline;
+  font-size: 1.25rem;
+  margin-left: 10px;
+  background-color: var(--alt-color);
+  padding: 7px;
+  border-radius: 5px;
+  color: var(--write-color);
+}
+main article section aside#movie-details div.col-md-8 div p {
+  font-size: 1.25rem;
+}
+main article section aside#movie-details div.col-md-8 div p.category {
+  margin-top: 20px;
+}
+main article section aside#movie-details div.col-md-8 div p.category span {
+  display: inline;
+  font-size: 1.05rem;
+  margin-right: 10px;
+  background-color: var(--content-color);
+  padding: 7px;
+  border-radius: 5px;
+  color: var(--write-color);
+}
+section#movie-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+aside.card-header {
+  margin-top: 20px;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid var(--alt-color);
+}
+
+@media screen and (max-width: 415px) {
+  main {
+    width: 300px;
+  }
+  main article section form#form-search aside input#txt-keyword {
+    width: 75%;
+  }
+  main article section ul li {
+    flex-direction: column;
+    width: 100%;
+  }
+  main article section ul li div {
+    padding: 5px;
+  }
+  main article section ul li div h5 {
+    font-size: 1.25rem;
+  }
+  main article section ul li div h5 span {
+    font-size: 0.75rem;
+  }
+  main article section ul li div p {
+    font-size: 1rem;
+  }
+  main article section aside#movie-details {
+    flex-direction: column;
+  }
+  main article section aside#movie-details div.row img {
+    width: 200px;
+  }
+  main article section aside#movie-details div.col-md-8 {
+    padding: 10px;
+  }
+  main article section aside#movie-details div.col-md-8 div h5 {
+    font-size: 1.25rem;
+  }
+  main article section aside#movie-details div.col-md-8 div p {
+    font-size: 1rem;
+  }
+  main article section aside#movie-details div.col-md-8 div h5 span {
+    font-size: 1.05rem;
+    padding: 3px;
+  }
+  main article section aside#movie-details div.col-md-8 div p.category {
+    display: flex;
+    flex-direction: column;
+  }
+  main article section aside#movie-details div.col-md-8 div p.category span {
+    font-size: 0.75rem;
+    margin: 3px 0;
+  }
+}

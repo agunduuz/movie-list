@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Film Project" />
+    <meta name="author" content="Anıl Gündüz" />
+    <title>Film Project</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="https://github.com/agunduuz" class="navbar-brand">GitHub</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section>
+          <form id="form-search">
+            <aside>
+              <input
+                type="text"
+                name="keyword"
+                id="txt-keyword"
+                placeholder="Type Keyword"
+              />
+              <input type="submit" value="Submit" id="btn-submit" class="btn" />
+            </aside>
+          </form>
+        </section>
+        <section id="movie-details-container">
+          <div class="card-header">
+            <button id="movie-details-close">X</button>
+          </div>
+          <aside id="movie-details"></aside>
+        </section>
+        <section id="movie-list-container">
+          <aside class="card-header">
+            <span id="movie-list-header"></span>
+          </aside>
+          <ul id="results"></ul>
+        </section>
+      </article>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
